@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+ 
+int main() {
+    int i,j,a[6][6],count;
+    for(int m =0; m<5; m++){
+        for(int n =0 ; n<5 ; n++){
+            cin>>a[m][n];
+        }
+    }
+    
+    for(int m =0; m<5; m++){
+        for(int n =0 ; n<5 ; n++){
+            if(a[m][n] == 1){
+                i =m+1;
+                j =n+1;
+            }
+        }
+    }
+    
+    count = abs(3-i) + abs(3-j);
+    
+    cout<<count;
+    
+	return 0;
+}
