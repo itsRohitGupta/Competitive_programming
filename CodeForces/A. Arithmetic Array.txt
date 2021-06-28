@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    long t;
+    cin>>t;
+    while(t!=0){
+        int s;
+        cin>>s;
+        int net=0;
+        int a[s];
+        for(int i=0;i<s;i++){
+            cin>>a[i];
+            net+=a[i];
+        }
+        if(net<s)
+           cout<<1<<endl;
+        else if(net==s)
+            cout<<0<<endl;
+        else
+          cout<< net-s<<endl;
+    t--;
+    }
+}
