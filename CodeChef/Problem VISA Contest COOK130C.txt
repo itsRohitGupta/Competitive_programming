@@ -1,0 +1,37 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int calc(){
+    int x1,x2,y1,y2,z1,z2;
+        cin>>x1>>x2>>y1>>y2>>z1>>z2;
+        if(x2>=x1){
+            if(y2>=y1){
+                if(z1>=z2){
+                    return 1;
+                }
+            }
+        }
+        
+        return -1;
+    
+}
+
+int main(){
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    
+    int j;
+    cin>>j;
+    
+    while(j!=0){
+        int a = calc();
+        if(a==1){
+            cout<<"YES"<<endl;
+        }
+        else
+        cout<<"NO"<<endl;
+    j--;
+    }
+    
+return 0;
+}
